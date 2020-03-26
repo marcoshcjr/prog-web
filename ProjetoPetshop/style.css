@@ -1,0 +1,49 @@
+.logo{
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+
+Título{
+    
+}
+
+li{
+    float: left;
+}
+
+.menu ul li{
+    background-color: darkcyan;
+    color:white;
+    float: left;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.menu ul li:hover{
+    background-color: black;
+}
+
+.menu ul{
+    padding: 0;
+}
+
+.menu ul ul{
+    display: none;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+}
+
+.ração{
+    height: 200px;
+    position: static;
+    top: 200px;
+    right: 800px;
+}
+
+
