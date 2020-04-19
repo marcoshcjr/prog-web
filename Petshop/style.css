@@ -1,0 +1,13 @@
+.img-responsive{
+    width: 61%;
+    margin: 20px;
+}
+.card{
+    border:none !important;
+}
+
+.d-block{
+  height: 250px;
+  width: 1125px;
+}
+
