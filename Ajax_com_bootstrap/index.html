@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="container">
+		<div class="row produtos"></div>
+	</div>
+	<script>
+	    var produtos = '';
+
+		$.ajax({
+			url: "https://server-node-example.herokuapp.com/promotios-hub",
+			type:'GET',
+			datatype:'JSON'
+			}).done(function(data) {
+ 
+  			$.each(data, function(i, campo){
+  			produtos += `<div class="col-md-3">
+  			<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  			<div class="card-header"></div>
+  			<div class="card-body">
+  			<h5 class="card-title">${campo.valor}</h5>
+  			<p class="card-text">${campo.nome}</p>
+ 			</div>
+  			</div>
+  			</div>`;
+			});
+		$(".produtos").append(produtos);
+		});	
+	</script>
+</body>
+</html>
