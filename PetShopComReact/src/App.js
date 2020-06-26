@@ -38,5 +38,3 @@ const API = 'https://server-node-example.herokuapp.com/produtos';
     }
 
     export default App;
-
- 
