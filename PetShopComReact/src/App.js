@@ -5,12 +5,12 @@ const API = 'https://server-node-example.herokuapp.com/produtos';
     class App extends Component {
 
       constructor(props) {
-    super(props);
+        super(props);
  
-    this.state = {
-      produtos: [],
-    };
-  }
+        this.state = {
+        produtos: [],
+        };
+      }
 
    componentDidMount() {
     fetch(API)
